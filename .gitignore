@@ -1,0 +1,12 @@
+# gitignore file for python
+
+__pycache__/
+
+
+
+# environment files
+.env
+.dotenv
+.venv
+venv/
+.env/
