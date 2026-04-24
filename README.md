@@ -15,6 +15,7 @@ Python is a general-purpose, high-level, interpreted programming language.
 - **High-level**: It abstract away complex computer architecture details, allowing programmers to focus on the problem.
 - **Object-Oriented**: It supports OO Programming principles, allowing for code organization using classes and objects.
 - **Extensive Standard Library**: Python comes with a large collection of pre-written modules for various tasks.
+- **Portable**: Python programs are highly portable. One program written in any programming language can be run in another comptuer with zero to minimal changes.
 
 ### Unique Features:
 - **Readability (The "Zen" of Python)**: Its design uses simple English keywords and strictly enforced indentation (whitespace) instead of braces or semicolon, forcing clean, uniform style across projects.
