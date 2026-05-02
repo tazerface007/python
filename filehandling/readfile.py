@@ -6,7 +6,9 @@ if __name__ == '__main__':
         if os.path.exists('hello.txt'):
             print('File Exists!')
             with open('hello.txt','r') as file:
-                print(f'{file.read()}')
+                #print(f'{file.read()}')
+                for line in file:
+                    print(line)
         else:
             raise FileNotFoundError('File not found');
     except Exception as e:
