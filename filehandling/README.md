@@ -24,3 +24,55 @@ or
 f = open("demofile.txt", "rt")
 ```
 Both the format is same, because "r" for read and "t" for the text are the default values.
+
+
+# Reading Files
+
+
+
+
+
+# Writing Files
+
+To write to a existsing file, you must add a parameter to the open() function:
+
+- "a" - Append - will append to the end of the file.
+- "w" - Write - will overwrite any  existing content
+
+Example: 
+
+```python
+with open("file.txt", "a") as f:
+    f.write("Now the file has more content!")
+
+with open("file.txt") as f:
+    print(f.read())
+```
+# Deleting Files
+
+To delete a file, you must import the OS module, and run os.remove() function.
+
+***Example***:
+```python
+import os
+os.remove("file.txt")
+```
+
+***To check if the File exists****
+
+```python
+import os
+if os.path.exists("file.txt"):
+    os.remove(file.txt")
+else:
+    print("The file does not exists")
+```
+
+### Deleting a Folder
+
+***Example***:
+
+```python
+import os
+os.rmdir("myfolder")
+```
