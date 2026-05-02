@@ -133,3 +133,94 @@ class Car:
 car1 = Car("Toyota", "Corolla", 2020)
 car1.display_info()
 ```
+
+# Python Class Properties
+
+**Class Properties**:
+
+- Properties are variable that belong to a class. They store data for each object created from the class.
+
+```python
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+p1 = Person("Puranik", 25)
+print(p1.name)
+print(p1.age)
+```
+
+**Delete Properties**
+
+You can delete properties from objects using the **del** keyword:
+
+```class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+p1 = Person("Puranik", 25)
+del p1.age
+
+print(p1.name) # This will work
+#print(p1.age) # this will cause an error
+```
+
+## Class properties vs object properties
+
+- Properties defined inside __init__() belongs to each object (instance properties).
+- Properties dfined outside method belong to the class itself (class properties) and are shared by all objects.
+
+```python
+class Person:
+    species = "Human" # class property
+    def __init__(self,name):
+        self.name = name # instance property
+
+p1 = Person("Rakesh")
+p2 = Person("Roshan")
+print(p1.name)
+print(p2.name)
+print(p1.species)
+print(p2.species)
+```
+
+## Modify Cass Properties
+
+when you modify a class property it affects all ojects:
+
+```python
+class Person:
+    species = "Human" # class property
+    def __init__(self,name):
+        self.name = name # instance property
+
+p1 = Person("Rakesh")
+p2 = Person("Roshan")
+print(p1.name)
+print(p2.name)
+print(p1.species)
+print(p2.species)
+p1.species = "Dog"
+print(p1.species)
+print(p2.species)
+```
+## Add New Properties
+
+- This method add a new property to an object( not class ).
+
+```python
+class Person:
+    def __init__(self, name):
+        self.name = name
+p1 = Person("Tobais")
+
+p1.age = 25
+p1.city = "Oslo"
+
+print(p1.name)
+print(p1.age)
+print(p1.city)
+```
+
+
+
